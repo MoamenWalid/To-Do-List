@@ -1,0 +1,178 @@
+body {
+  background: #acb6e5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Cairo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:read-write {
+  border: none;
+  outline: none;
+}
+
+.to-do-list {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 700px;
+  padding: 20px 20px 30px;
+  border-radius: 15px;
+  margin: 80px auto;
+}
+
+.to-do-list > p.task-paragraph {
+  margin-top: 0;
+  color: #979797;
+  font-size: 25px;
+}
+
+.to-do-list > .add-task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-do-list > .add-task > input {
+  width: 65%;
+  padding: 6px 11px;
+  border-radius: 8px;
+  border: none; 
+  outline: none;
+  background: #4caf50;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+
+}
+
+.to-do-list > .add-task > input::placeholder {
+  color: #fff;
+}
+
+.to-do-list > .add-task > button {
+  width: 30%;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  background: #e91e63;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tasks-paragraph {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+  color: #979797;
+}
+
+.enter-key {
+  color: #49c7bb;
+  font-weight: bold;
+  width: fit-content;
+  margin: 5px;
+}
+
+.tasks-paragraph > span {
+  color: red;
+  font-weight: bold;
+}
+
+.time {
+  color: #e91e63;
+  background: #111;
+  width: fit-content;
+  padding: 0px 7px;
+  margin-left: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.time > span {
+  color: #fff;
+}
+
+.time > span > span {
+  color: #8cafc1;
+}
+
+.tasks > .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #009688;
+  padding: 6px 15px;
+  border-radius: 9px;
+  color: #fff ;
+}
+
+.tasks > .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.tasks > .task > p {
+  margin: 0;
+}
+
+.edit, 
+.delete, 
+.save {
+  border: none;
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save {
+  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 5px #eee;
+  margin-right: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.save:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.edit {
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 5px #eee;
+  margin-right: 10px;
+}
+
+.edit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.delete {
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 5px #eee;
+}
+
+.delete:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
